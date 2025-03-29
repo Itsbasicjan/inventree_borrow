@@ -1,0 +1,2 @@
+recursive-include my_inventree_plugin/templates *
+recursive-include my_inventree_plugin/static *
