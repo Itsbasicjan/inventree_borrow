@@ -10,7 +10,7 @@ from django.shortcuts import render
 from django.urls import path
 
 class TestNavigationPlugin(NavigationMixin, InvenTreePlugin):
-    NAME = "TestNavigationPlugin"
+    NAME = "inventree_borrow"
     SLUG = "my_inventree_plugin"  # Dieser SLUG entspricht dem Namen im statischen Ordner
     TITLE = "Test Navigation Plugin"
     AUTHOR = "Dein Name"
@@ -36,5 +36,5 @@ class TestNavigationPlugin(NavigationMixin, InvenTreePlugin):
     def view_test(self, request):
         return render(request, 'test.html', {})
 
-# Registrierung des Plugins in InvenTree
+
 registry.register(TestNavigationPlugin)
